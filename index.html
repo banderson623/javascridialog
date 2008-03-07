@@ -23,20 +23,23 @@
       
       <p>Please enter the contact's information.</p>
 
-      <label for="field_1">Name</label>
-      <input type="text" name="field_1" value="You're Name" class="sample" id="field_1" />
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" value="First Name" class="sample required" id="first_name" />
+
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" value="Last Name" class="sample required" id="last_name" />
 
 
       <label for="field_2">Address</label>
       <textarea name="field_2" rows="8" cols="40" class="sample">(4020 Edgewater dr.)</textarea>
     
-      <label for="field_3">State</label>
-      <select name="field_3" class="" id="field_3">
+      <label for="animal">Animal</label>
+      <select name="field_3" class="" id="animal">
         <option value=""></option>
-        <option value="ca">California</option>
-        <option value="or">Oregon</option>
-        <option value="wa">Washington</option>
-        <option value="az">Arizona</option>
+        <option value="puppy">Puppy</option>
+        <option value="cat">Cat</option>
+        <option value="horse">Horse</option>
+        <option value="pony">Pony</option>
       </select>
     
     </fieldset>    
@@ -51,37 +54,7 @@
   <!-- <img src="images/mock.png" width="431" height="428" alt="Mock"> -->
   
   <script type="text/javascript" charset="utf-8">
-  db = new DialogBox('first_dialog_box');
-  
-  
-    // $$('.dialog_box fieldset input','.dialog_box fieldset textarea').each(function(el){
-    //   Event.observe(el,"focus",function(){
-    //     // console.log('Focused ' + el.id)
-    //     // el.addClassName('focused');
-    //     db.focusField(el);
-    //   });
-    //   Event.observe(el,"select",function(){
-    //     db.focusField(el);
-    //     // console.log('Selected ' + el.id)
-    //     // el.addClassName('focused');
-    //   });
-    // 
-    // 
-    //   
-    //   // Event.observe(el,"blur",function(){
-    //   //   console.log('bluring ' + el.id)
-    //   //   el.removeClassName('focused');
-    //   // });
-    //   
-    //   
-    //   
-    //   Event.observe(el,'focus', function(){
-    //     if(el.hasClassName('sample')){
-    //       $(el).removeClassName('sample');
-    //       $(el).value="";
-    //     };
-    //   });
-    // });
+    db = new DialogBox('first_dialog_box');
   </script>
   
 </body>

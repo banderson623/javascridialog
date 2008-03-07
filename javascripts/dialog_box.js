@@ -7,7 +7,7 @@ DialogBox.prototype = {
 		
 		
 		this.closeObserver = this._closeWindow.bind(this);
-		
+		this.findRequiredFields();
 		this.setObserversOnFields();
 		
 		this.openWindow()
@@ -48,7 +48,7 @@ DialogBox.prototype = {
 	},
 	
 	focusField:function(el){
-		el = $(el);
+		var el = $(el);
 		el.addClassName('focused');
 		el.previous('label').addClassName('focused');
 		
@@ -56,7 +56,6 @@ DialogBox.prototype = {
 			el.removeClassName('focused');
 			el.previous('label').removeClassName('focused');
     });
-    
 	},
 	
 	setObserversOnFields: function(){
@@ -71,6 +70,13 @@ DialogBox.prototype = {
         };
       });
     });
+	},
+
+	findRequiredFields: function(){
+	  this.element.select(".required").each(function(el){
+      // alert("Required field: " + el.id);
+      console.log('Required fields are: ' + el.id);
+	  });
 	},
 
 	_closeWindow: function(){
