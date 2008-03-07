@@ -1,0 +1,164 @@
+body {
+  background:url('http://images.apple.com/home/2007/images/holiday_endstate_20071213.jpg') red;
+  background:url('http://www.rubyonrails.org/images/rails.png') green;
+  
+/*  background:green;*/
+}
+
+.dialog_box {
+  position:absolute;
+  left:30%;
+  width:400px;
+/*  font-family: Arial, "MS Trebuchet", sans-serif;*/
+  color:#555;
+}
+.dialog_box, fieldset textarea {
+  font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+.dialog_box fieldset{
+   background:url('../images/stretcher.png') repeat-y;
+   border:0;
+   padding:10px 0;
+   margin:0;
+}
+
+.dialog_box .topper {
+  height:11px;
+  background:url('../images/top.png') no-repeat top;
+}
+
+.dialog_box h1 {
+  margin:0;
+  padding:5px 20px;
+  color:#fff;
+  font-size:1.8em;
+  background:#616161;
+  background:url('../images/title.png') repeat-y;
+}
+
+.dialog_box p,
+.dialog_box label {
+  padding:0 30px;
+  font-size:1.1em;
+  line-height:1.2em;
+  display:block;
+}
+
+.dialog_box label {
+  padding-left:0;
+  margin-left:30px;
+  font-weight:bold;
+  color:#222;
+  font-size:1.3em;
+/*  display:none;*/
+}
+
+.dialog_box fieldset input,
+.dialog_box fieldset textarea{
+  margin:0px 30px;
+  width:340px;
+  background:url('../images/input.png') no-repeat top left;
+  border:0;
+  font-size:1.5em;
+  padding:5px;
+  color:#333;
+/*  border:1px solid #eee;*/
+}
+.dialog_box fieldset textarea{
+  height:2.3em;
+  overflow: hidden;
+}
+
+
+.dialog_box fieldset input:hover, 
+.dialog_box fieldset input.focused,
+.dialog_box fieldset textarea:hover, 
+.dialog_box fieldset textarea.focused  {
+  background:url('../images/input-over.png') no-repeat top left;
+}
+
+.dialog_box fieldset label.focused {
+/*  background:#fffcd8;*/
+/*  margin-right:20px;*/
+  color:#8D6721;
+/*  margin:0 0 0 30px ;*/
+/*  padding-left:5px;*/
+/*  border-left:10px solid #fffcd8;*/
+}
+
+/*.dialog_box fieldset input.sample,*/
+.dialog_box fieldset .sample  {
+  color:#ccc;
+  font-size:1.5em;
+}
+
+.dialog_box input + label {
+  margin-top:10px;
+}
+
+.dialog_box .buttons {
+  height:50px;
+  position:relative;
+  background:url('../images/bottom.png') no-repeat bottom;
+  padding:10px 20px 0;
+}
+
+.dialog_box .buttons a,
+.dialog_box .buttons input {
+  position:absolute;
+  font-size:1.1em;
+  text-decoration:none;
+  text-transform: uppercase;
+  color:#666;
+  padding:4px 8px;
+  border-bottom:1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.dialog_box .buttons input {
+  right:50px;
+  border:0;
+  border-bottom:1px solid transparent;
+  background:#ccc;
+  color:#555;
+  text-align:right;
+}
+
+
+.dialog_box .buttons a {
+  left:50px;
+  color:#999;
+  text-align:left;
+}
+
+.dialog_box .buttons a:hover,
+.dialog_box .buttons input:hover {
+  background:#bbb;
+  border-color:#aaa;
+  color:#333;
+}
+
+.dialog_box .spinner {
+  display:none;
+}
+
+.processing {
+  display:block;
+  position:absolute;
+  top:12px;
+  bottom:12px;
+  background:url('../images/spinner-medium.gif') no-repeat  center center #fff;
+  margin:0 9px;
+  width:382px;
+  position:absolute;
+  opacity:0.8;
+  z-index:5;
+  text-align:center;
+  vertical-align:center;
+  font-size:2em;
+  line-height:4em;
+  text-transform: uppercase;
+}
+

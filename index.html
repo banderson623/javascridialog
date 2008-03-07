@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="javascripts/prototype.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/scriptaculous.js?load=effects,builder" type="text/javascript" charset="utf-8"></script>
+
+  <script src="javascripts/dialog_box.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="stylesheets/dialog_box.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  
+	<title>Javascript DialogBox</title>
+	
+</head>
+<body>
+  <form class="dialog_box" id="first_dialog_box" style="display:none;">
+    <div class="topper"></div>
+    <div class="processing" style="display:none;">Processing</div>
+    
+    <h1>New Contact</h1>
+    <fieldset>
+      
+      <p>Please enter the contact's information.</p>
+      <!-- <p>I’d suggest that the window can grow and shrink as needed based on how much text you want to write here.</p> -->
+
+      <label for="field_1">Name</label>
+      <input type="text" name="field_1" value="You're Name" class="sample" id="field_1" />
+
+
+      <label for="field_2">Address</label>
+      <textarea name="field_2" rows="8" cols="40" class="sample">(4020 Edgewater dr.)</textarea>
+      <!-- <input type="text" name="field_2" value="(4020 Edgewater)" class="sample" id="field_2" /> -->
+    
+    </fieldset>    
+    
+    <div class="buttons">      
+      <a href="#"  onclick="db.cancel();">Cancel</a>
+      <input onclick="db.save();return false;" type="submit" name="save" value="Ok" id="save">
+    </div>
+  </form>
+  
+  
+  <!-- <img src="images/mock.png" width="431" height="428" alt="Mock"> -->
+  
+  <script type="text/javascript" charset="utf-8">
+  db = new DialogBox('first_dialog_box');
+  
+  
+    // $$('.dialog_box fieldset input','.dialog_box fieldset textarea').each(function(el){
+    //   Event.observe(el,"focus",function(){
+    //     // console.log('Focused ' + el.id)
+    //     // el.addClassName('focused');
+    //     db.focusField(el);
+    //   });
+    //   Event.observe(el,"select",function(){
+    //     db.focusField(el);
+    //     // console.log('Selected ' + el.id)
+    //     // el.addClassName('focused');
+    //   });
+    // 
+    // 
+    //   
+    //   // Event.observe(el,"blur",function(){
+    //   //   console.log('bluring ' + el.id)
+    //   //   el.removeClassName('focused');
+    //   // });
+    //   
+    //   
+    //   
+    //   Event.observe(el,'focus', function(){
+    //     if(el.hasClassName('sample')){
+    //       $(el).removeClassName('sample');
+    //       $(el).value="";
+    //     };
+    //   });
+    // });
+  </script>
+  
+</body>
+</html>
