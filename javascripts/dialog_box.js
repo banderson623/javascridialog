@@ -19,7 +19,7 @@ DialogBox.prototype = {
 	  if(this.checkIfValid()) {
 	    this.closeWindow();
 	  } else {
-	    console.log("Not valid! " + this.errors.inspect());
+	    //console.log("Not valid! " + this.errors.inspect());
 	    this.notValid();
 	  }
 	},
