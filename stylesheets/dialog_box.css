@@ -1,6 +1,6 @@
 body {
-  background:url('http://images.apple.com/home/2007/images/holiday_endstate_20071213.jpg') red;
-  background:url('http://www.rubyonrails.org/images/rails.png') green;
+/*  background:url('http://images.apple.com/home/2007/images/holiday_endstate_20071213.jpg') red;*/
+/*  background:url('http://www.rubyonrails.org/images/rails.png') green;*/
   
 /*  background:green;*/
 }
@@ -9,11 +9,10 @@ body {
   position:absolute;
   left:30%;
   width:400px;
-/*  font-family: Arial, "MS Trebuchet", sans-serif;*/
   color:#555;
 }
 .dialog_box, fieldset textarea {
-  font-family: Arial, "MS Trebuchet", sans-serif;
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
 }
 
 .dialog_box fieldset{
