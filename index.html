@@ -14,7 +14,7 @@
 	
 </head>
 <body>
-  <form class="dialog_box" id="first_dialog_box" style="display:none;">
+  <form class="dialog_box" id="first_dialog_box" style="display:none;" action="#">
     <div class="topper"></div>
     <div class="processing" style="display:none;">Processing</div>
     
@@ -35,23 +35,20 @@
     
       <label for="animal">Animal</label>
       <select name="field_3" class="" id="animal">
-        <option value=""></option>
+        <option value="">&nbsp;</option>
         <option value="puppy">Puppy</option>
         <option value="cat">Cat</option>
         <option value="horse">Horse</option>
         <option value="pony">Pony</option>
       </select>
-    
     </fieldset>    
     
     <div class="buttons">      
       <a href="#"  onclick="db.cancel();">Cancel</a>
-      <input onclick="db.save();return false;" type="submit" name="save" value="Ok" id="save">
+      <input onclick="db.save();return false;" type="submit" name="save" value="Ok" id="save" />
     </div>
   </form>
   
-  
-  <!-- <img src="images/mock.png" width="431" height="428" alt="Mock"> -->
   
   <script type="text/javascript" charset="utf-8">
     db = new DialogBox('first_dialog_box');
