@@ -80,12 +80,7 @@ body {
 }
 
 .dialog_box fieldset label.focused {
-/*  background:#fffcd8;*/
-/*  margin-right:20px;*/
   color:#8D6721;
-/*  margin:0 0 0 30px ;*/
-/*  padding-left:5px;*/
-/*  border-left:10px solid #fffcd8;*/
 }
 
 /*.dialog_box fieldset input.sample,*/
@@ -97,6 +92,17 @@ body {
 .dialog_box input + label {
   margin-top:10px;
 }
+
+.dialog_box fieldset input.not_valid,
+.dialog_box fieldset textarea.not_valid, 
+.dialog_box fieldset select.not_valid {
+  border: 2px solid #b96767;
+}
+
+.dialog_box fieldset label.required {
+  color:darkred;
+}
+
 
 .dialog_box .buttons {
   height:50px;
