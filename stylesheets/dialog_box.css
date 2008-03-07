@@ -50,6 +50,7 @@ body {
 }
 
 .dialog_box fieldset input,
+.dialog_box fieldset select,
 .dialog_box fieldset textarea{
   margin:0px 30px;
   width:340px;
@@ -63,6 +64,11 @@ body {
 .dialog_box fieldset textarea{
   height:2.3em;
   overflow: hidden;
+}
+
+.dialog_box fieldset select {
+  width:auto;
+  background-color:#fff;
 }
 
 
